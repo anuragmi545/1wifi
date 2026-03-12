@@ -9,7 +9,7 @@ import FloatingActions from './components/FloatingActions';
 import LegalPage from './components/LegalPage';
 
 function App() {
-    const [activeTab, setActiveTab] = useState('ott');
+    const [activeTab, setActiveTab] = useState('broadband');
     const [isScrolled, setIsScrolled] = useState(false);
     const [legalView, setLegalView] = useState(null); // 'terms', 'privacy', 'refund', or null
 
@@ -32,7 +32,6 @@ function App() {
                     <main>
                         <Hero />
                         <OTTGrid />
-                        <Features />
 
                         <section id="plans" style={{ padding: '8rem 0', background: 'var(--bg-light)' }}>
                             <div className="container" style={{ textAlign: 'center' }}>
@@ -81,6 +80,8 @@ function App() {
                                 </div>
                             </div>
                         </section>
+
+                        <Features />
 
                         <section id="contact" style={{ padding: '8rem 0', background: 'var(--bg-light)' }}>
                             <div className="container" style={{ textAlign: 'center' }}>

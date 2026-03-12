@@ -117,8 +117,8 @@ export default function Navbar({ isScrolled }) {
 
                 <nav style={{ display: 'flex', gap: '1rem', alignItems: 'center' }} className="desktop-nav">
                     <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className={`nav-link ${activeSection === 'home' ? 'active' : ''}`}>Home</a>
-                    <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>About Us</a>
                     <a href="#plans" onClick={(e) => handleNavClick(e, 'plans')} className={`nav-link ${activeSection === 'plans' ? 'active' : ''}`}>Plans</a>
+                    <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>About Us</a>
                     <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}>Contact Us</a>
                 </nav>
 
@@ -152,8 +152,8 @@ export default function Navbar({ isScrolled }) {
                     >
                         <nav style={{ display: 'flex', flexDirection: 'column', padding: '1rem 2rem', gap: '0.5rem' }}>
                             <a href="#home" onClick={(e) => handleNavClick(e, 'home')} className={`mobile-nav-link ${activeSection === 'home' ? 'active' : ''}`}>Home</a>
-                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className={`mobile-nav-link ${activeSection === 'about' ? 'active' : ''}`}>About Us</a>
                             <a href="#plans" onClick={(e) => handleNavClick(e, 'plans')} className={`mobile-nav-link ${activeSection === 'plans' ? 'active' : ''}`}>Plans & Pricing</a>
+                            <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className={`mobile-nav-link ${activeSection === 'about' ? 'active' : ''}`}>About Us</a>
                             <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')} className={`mobile-nav-link ${activeSection === 'contact' ? 'active' : ''}`}>Contact Us</a>
                             <a href="https://portal.1wifi.in" onClick={() => setIsMobileMenuOpen(false)} style={{
                                 background: 'linear-gradient(135deg, #3182CE 0%, #805AD5 100%)',
